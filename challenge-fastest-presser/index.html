@@ -17,7 +17,40 @@
 
   <body>
     <div class="content"></div>
-  </body>
+    <div class ="start-game">
+<h1>Fastest Presser</h1>
+<input id = "second-input" class="input-group-text shadow mb-3" type="number" placeholder = "Set seconds" min="1"/>
+<h5 class="m-2 d-none" id="time-header">
+Time remaining:
+<span id ="time-remaining" class="text-remaining"></span>
+ </h5>
+ <div class="game-button-container">
+<button id="start-game-button" class="btn btn-success p-2 m-3 shadow">
+Start Game
+</button>
+<button id="reset-btn" class="btn btn-primary p-2 m-3 shadow d-none">
+  Reset Game
+ </button>
+ </div>
+</div>
 
+
+<div id="key-container" class="row text-center border">
+<div class="col-5 p-4">
+<h2>Player One</h2>
+<h3>Press 'S' to win</h3>
+<h4 id ="player-s"> Score: 0</h4>
+<canvas id="my-canvasS"></canvas>
+</div>
+<div class="col-5 p-4 border-left">
+<h2>Player Two</h2>
+<h3>Press 'L' to win</h3>
+<h4 id="player-l">Score: 0</h4>
+<canvas id="my-canvasL"></canvas>
+</div>
+</div>
+    </div>
+  </body>
+<script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.13/dist/index.min.js"></script>
   <script src="script.js"></script>
 </html>
